@@ -70,6 +70,8 @@ void check_cardinality_at_limits()
     check_interval_size<std::greater>(open_interval<Domain, std::greater>(low + 3, low), 2);
 }
 
+// 
+// https://github.com/boostorg/icl/issues/41
 BOOST_AUTO_TEST_CASE(issue_41_cardinality_at_domain_limits)
 {
     check_cardinality_at_limits<boost::uint8_t>();
