@@ -72,7 +72,8 @@ void check_cardinality_at_limits()
 
 // 
 // https://github.com/boostorg/icl/issues/41
-BOOST_AUTO_TEST_CASE(issue_41_cardinality_at_domain_limits)
+// https://github.com/boostorg/icl/issues/63
+BOOST_AUTO_TEST_CASE(issue_41_cardinality_at_domain_limits_plus_decrementing_domains)
 {
     check_cardinality_at_limits<boost::uint8_t>();
     check_cardinality_at_limits<boost::int8_t>();
